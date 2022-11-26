@@ -21,3 +21,46 @@
 body {
   font-family: Product Sans;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Utility classes */
+
+.container-flex {
+  display: flex;
+}
+
+.container-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.container-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.list-none {
+  list-style: none;
+}
