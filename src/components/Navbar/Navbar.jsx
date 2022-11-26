@@ -5,7 +5,7 @@ import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   const getActiveStyles = ({ isActive }) => {
-    return isActive && `${styles.highlight}`;
+    return isActive ? `${styles.highlight}`:"";
   };
   return (
     <>

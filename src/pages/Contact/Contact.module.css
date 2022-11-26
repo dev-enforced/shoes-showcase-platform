@@ -1,0 +1,66 @@
+.contact_page_wrapper {
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+  background-position: center;
+}
+
+.contact_page_wrapper::before {
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/public/assets/contactbg.png");
+  background-size: cover;
+  background-position: top center;
+}
+
+.contact_page_content {
+  z-index: 10;
+  gap: 2rem;
+  margin-top: 3.8rem;
+  position: relative;
+}
+
+.contact_card {
+  max-width: 90vw;
+  gap: 1.8rem;
+  height: 27.1rem;
+  width: 22.5rem;
+  background-color: #f7f7f7;
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+
+.contact_card_title {
+  font-size: x-large;
+  font-weight: 550;
+}
+
+.contact_details_container {
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+.email_style {
+  font-size: larger;
+  font-weight: 550;
+}
+
+.designator {
+  font-size: smaller;
+}
+
+.social_handles_container {
+  gap: 0.6rem;
+  font-size: medium;
+}
+
+.social_handles {
+  gap: 1rem;
+}
+
+.individual_social_handle {
+  cursor: pointer;
+  border-radius: 50%;
+}
