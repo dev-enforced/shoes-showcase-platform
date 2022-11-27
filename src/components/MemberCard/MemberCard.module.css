@@ -1,0 +1,50 @@
+.member_card_container {
+  justify-content: space-around;
+  align-items: center;
+  max-width: 90vw;
+  height: 20.6rem;
+  width: 12.2rem;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.3);
+}
+
+.member_card_container:hover {
+  background-color: rgba(238, 238, 96, 0.3);
+  cursor: pointer;
+  border-radius: 20px;
+  transform: translate(0, -10px);
+}
+
+.member_card_image_container {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.member_card_image {
+  height: 12.2rem;
+  width: 12.2rem;
+}
+
+.member_card_details_container,
+.member_card_name_responsibility {
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.member_card_name_responsibility {
+  gap: 0.2rem;
+}
+
+.social_media_handle_container {
+  gap: 0.8rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.social_media_handle {
+  height: 1.3rem;
+  width: 1.3rem;
+  cursor: pointer;
+}
