@@ -6,4 +6,5 @@ import {
   FaLinkedin as Linkedin,
   FaBehanceSquare as Behance,
 } from "react-icons/fa";
-export { User, Dribble, Facebook, Medium, Linkedin, Behance };
+import { FiFilter as Filter } from "react-icons/fi";
+export { User, Dribble, Facebook, Medium, Linkedin, Behance, Filter };

@@ -1,0 +1,53 @@
+.filter_sidebar_container {
+  height: fit-content;
+  padding: 1.6rem;
+  box-shadow: 0px 0px 10px 0px rgba(95, 94, 94, 0.75);
+}
+
+.sidebar_title_header {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter_sidebar_container > .filter_contents {
+  flex-grow: 1;
+}
+
+.filter_sidebar_container .filter_contents {
+  margin-bottom: 1.6rem;
+}
+
+.filter_title {
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.individual_filter {
+  display: block;
+  margin-top: 8px;
+  font-size: 1.2rem;
+}
+
+.color_box_container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin: 10px;
+}
+
+.individual_color_box {
+  cursor: pointer;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.filter_sidebar_btn {
+  color: #f7f7f7;
+  background-color: rgb(13, 12, 12);
+  padding: 6px 12px;
+  cursor: pointer;
+  border: transparent;
+  outline: transparent;
+}
