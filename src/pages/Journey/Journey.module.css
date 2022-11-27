@@ -1,0 +1,63 @@
+\.journey_wrapper {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.journey_content_container {
+  width: 80vw;
+  height: 60%;
+  margin-top: 6rem;
+}
+
+.imgDiv {
+  padding: 5rem;
+  background-image: linear-gradient(
+      rgba(13, 13, 13, 0) 50%,
+      rgba(13, 13, 13, 1)
+    ),
+    url("/public/assets/grasspic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imgText {
+  color: #fff;
+  font-size: 5rem;
+  width: fit-content;
+  margin: auto;
+  font-weight: 500;
+}
+
+.textDiv {
+  gap: 2rem;
+  position: relative;
+  background-color: #0d0d0d;
+  color:#f7f7f7;
+  z-index: 4;
+  padding: 3rem;
+  background-image: url("/public/assets/logoW.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:300px;
+}
+
+.chapter_details_container{
+  gap:0.8rem;
+}
+
+.chapter_title{
+  font-size: Gobold Regular;
+}
+
+@media screen and (max-width: 768px) {
+  .journey_content_container {
+    width: 90vw;
+  }
+  .imgText {
+    font-size: 2.5rem;
+  }
+  .textDiv{
+    background-size: 0px;
+  }
+}
