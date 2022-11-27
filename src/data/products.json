@@ -1,3 +1,94 @@
 {
-  "products": [{}, {}, {}, {}, {}, {}, {}, {}]
+  "products": [
+    {
+      "id": "ksl-01",
+      "short_name": "KSL 01",
+      "long_name": "Ferrari X-Ray Speed Running Sneakers For Men",
+      "product_picUrl": "https://res.cloudinary.com/bhakti1801/image/upload/v1649913108/productMen2_qzu7ew.jpg",
+      "price": 2984,
+      "ratings": 4,
+      "color": "blue",
+      "product_type": "Sneakers"
+    },
+    {
+      "id": "kwl-01",
+      "short_name": "KWL 01",
+      "long_name": "Revolution 4 Running Shoes For Men",
+      "product_picUrl": "https://ik.imagekit.io/yol3sixl2xj/product-listing/product3_1eyWEEfNV.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1649654106451",
+      "price": 5672,
+      "ratings": 3,
+      "color": "cream",
+      "product_type": "Shoes"
+    },
+    {
+      "id": "ksl-02",
+      "short_name": "KSL 02",
+      "long_name": "Fire run running Sneakers",
+      "product_picUrl": "https://ik.imagekit.io/yol3sixl2xj/product-listing/product9_a5aiu9Amd.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1649654108981",
+      "price": 2095,
+      "ratings": 5,
+      "color": "white",
+      "product_type": "Sneakers"
+    },
+    {
+      "id": "kwl-02",
+      "short_name": "KWL 02",
+      "long_name": "Revolution 6 Next Nature Road Running Shoes",
+      "product_picUrl": "https://ik.imagekit.io/yol3sixl2xj/product-listing/kids/kidsproduct6_u0QazgbZZ.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1649658844065",
+      "price": 9586,
+      "ratings": 2,
+      "color": "black",
+      "product_type": "Shoes"
+    },
+    {
+      "id": "ksl-03",
+      "short_name": "KSL 03",
+      "long_name": "Running Sneakers For Men",
+      "product_picUrl": "https://res.cloudinary.com/bhakti1801/image/upload/v1654506488/163_xnfhhv.webp",
+      "price": 1934,
+      "ratings": 5,
+      "color": "blue",
+      "product_type": "Sneakers"
+    },
+    {
+      "id": "kwl-03",
+      "short_name": "KWL 03",
+      "long_name": "Revolution 8 shoes for women",
+      "product_picUrl": "https://ik.imagekit.io/yol3sixl2xj/product-listing/product3_1eyWEEfNV.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1649654106451",
+      "price": 6124,
+      "ratings": 3,
+      "color": "cream",
+      "product_type": "Shoes"
+    },
+    {
+      "id": "ksl-04",
+      "short_name": "KSL 04",
+      "long_name": "Adifloss M For Men",
+      "ratings": 4,
+      "product_picUrl": "https://ik.imagekit.io/yol3sixl2xj/product-listing/white1p_bw7PdwBBd.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1649654109997",
+      "price": 9224,
+      "color": "white",
+      "product_type": "Sneakers"
+    },
+    {
+      "id": "kwl-04",
+      "short_name": "KWL 04",
+      "long_name": "Revolution 6 Next Nature Road Running Shoes",
+      "product_picUrl": "https://ik.imagekit.io/yol3sixl2xj/product-listing/product10_PGatAs1PWZ.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1649654103924",
+      "price": 1796,
+      "ratings": 2,
+      "color": "black",
+      "product_type": "Shoes"
+    },
+    {
+      "id": "ksl-05",
+      "short_name": "KSL 05",
+      "long_name": "Hustle V4 SNEAKERS for Women",
+      "product_picUrl": "https://ik.imagekit.io/yol3sixl2xj/product-listing/kids/kidsproduct2_fxuz6c2DE.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1649658841296",
+      "price": 9600,
+      "ratings": 5,
+      "color": "cream",
+      "product_type": "Sneakers"
+    }
+  ]
 }
