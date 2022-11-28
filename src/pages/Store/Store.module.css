@@ -16,10 +16,16 @@
   .store_content_container {
     grid-template-columns: 30% 65%;
   }
+  .cart_container {
+    grid-column-start: 2;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .store_content_container {
     grid-template-columns: 95%;
+  }
+  .cart_container {
+    grid-column-start: 1;
   }
 }
