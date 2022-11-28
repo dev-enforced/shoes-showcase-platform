@@ -14,7 +14,9 @@ const ProductCard = ({
   const redirect = useNavigate();
   const starsToBeShown = generateRatings(ratings);
   return (
-    <div className={`cursor-pointer`}>
+    <div className={`cursor-pointer`} onClick={()=>{
+      redirect(`/store/${id}`);
+    }}>
       <div className={styles.product_image_container}>
         <img src={product_picUrl} alt={long_name} />
       </div>
