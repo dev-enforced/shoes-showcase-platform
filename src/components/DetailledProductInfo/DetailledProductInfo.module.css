@@ -1,0 +1,150 @@
+.detailled_product_info_container {
+  width: 100%;
+  height: 100%;
+  padding: 2.4rem;
+  box-shadow: 0px 0px 10px 0px rgba(95, 94, 94, 0.75);
+}
+
+.redirect_to_store {
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  gap: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.detailled_product_info_content_container,
+.product_visual_overview {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.detailled_product_info_content_left {
+  width: 70%;
+}
+
+.detailled_product_info_content_right {
+  width: 30%;
+  font-size: 1rem;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.product_enlarged_img_container {
+  width: 80%;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.product_enlarged_img_container img {
+  width: 100%;
+  background-color: #f5f5f5;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.product_minified_img_container {
+  width: 20%;
+  min-height: 100%;
+  justify-content: space-between;
+}
+
+.product_minified_img_container img {
+  object-fit: contain;
+  aspect-ratio: 1/1;
+  width: 100%;
+  z-index: 1;
+  background-color: #f5f5f5;
+}
+
+.product_rate_custom {
+  font-size: 1rem;
+}
+
+.dull_text {
+  font-size: 1rem;
+  color: #d9bed7;
+}
+
+.choice_container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 1.2rem;
+}
+
+.choice_container .choice_details_container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-left: 1.2rem;
+}
+
+.individual_choice_container {
+  width: 1.6rem;
+  height: 1.6rem;
+  cursor: pointer;
+}
+
+.individual_choice_container img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.blue_choice {
+  border: #000 1px solid;
+  background-color: #57a0ec;
+}
+
+.black_choice {
+  border: #000 1px solid;
+  background-color: #000;
+}
+
+.white_choice {
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  border: #000 1px solid;
+  background-color: #fff;
+}
+
+.product_actions {
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  gap: 1.2rem;
+  margin-top: 1.6rem;
+}
+
+.add_to_cart_btn {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  padding: 8px;
+}
+
+.share_design {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  display: block;
+  margin: auto;
+  padding: 8px;
+}
+
+@media screen and (max-width: 800px) {
+  .detailled_product_info_content_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50%;
+  }
+  .detailled_product_info_content_left,
+  .detailled_product_info_content_right {
+    margin-bottom: 1.2rem;
+    width: 100%;
+  }
+}

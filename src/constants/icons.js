@@ -12,6 +12,7 @@ import {
   AiFillStar as Filled,
   AiOutlineStar as Empty,
   AiOutlineCalendar as Scheduler,
+  AiOutlineArrowLeft as GoBack
 } from "react-icons/ai";
 import { BiMap as Navigate } from "react-icons/bi";
 import { BsMinecartLoaded as Cart } from "react-icons/bs";
@@ -19,6 +20,7 @@ export {
   Cart,
   Scheduler,
   Navigate,
+  GoBack,
   User,
   Dribble,
   Facebook,

@@ -5,3 +5,4 @@ export * from "./contactDetails";
 export * from "./teamDetails";
 export * from "./chapterDetails";
 export * from "./filters";
+export * from "./shoeEdgeEnds";
