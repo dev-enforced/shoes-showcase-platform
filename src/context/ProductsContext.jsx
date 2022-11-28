@@ -50,8 +50,6 @@ const ProductsProvider = ({ children }) => {
     const timer = setTimeout(setNewProductsList, 1500);
     return () => clearTimeout(timer);
   }, []);
-  console.log(cart);
-  console.log(cart.find((everyCartItem) => everyCartItem.id === "kwl-01"));
   return (
     <ProductsContext.Provider
       value={{
