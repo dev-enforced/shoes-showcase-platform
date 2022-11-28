@@ -48,4 +48,9 @@ const colorFilters = [
   },
 ];
 
-export { costFilters, typeFilters, colorFilters };
+const priceSorters = [
+  { uid: uuid(), sortingMethod: "Price - Low To High" },
+  { uid: uuid(), sortingMethod: "Price - High To Low" },
+];
+
+export { costFilters, typeFilters, colorFilters, priceSorters };

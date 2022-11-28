@@ -7,4 +7,17 @@ import {
   FaBehanceSquare as Behance,
 } from "react-icons/fa";
 import { FiFilter as Filter } from "react-icons/fi";
-export { User, Dribble, Facebook, Medium, Linkedin, Behance, Filter };
+import { BsSearch as Search } from "react-icons/bs";
+import { AiFillStar as Filled, AiOutlineStar as Empty } from "react-icons/ai";
+export {
+  User,
+  Dribble,
+  Facebook,
+  Medium,
+  Linkedin,
+  Behance,
+  Filter,
+  Search,
+  Filled,
+  Empty,
+};

@@ -5,6 +5,7 @@ import React, {
   useState,
   useReducer,
 } from "react";
+import data from "data/products.json";
 const ProductsContext = createContext();
 
 // Possible types of filters :
@@ -14,9 +15,25 @@ const ProductsContext = createContext();
 // Price sort : High to low , low to high
 
 const ProductsProvider = ({ children }) => {
+  const [loading, setLoading] = useState(true);
   const [productsListed, updateProductsListed] = useState([]);
+  const [cart, updateCart] = useState([]);
+
+  const setNewProductsList = () => {
+    updateProductsListed(data?.products);
+    setLoading(false);
+  };
+
+
+  useEffect(() => {
+    const timer = setTimeout(setNewProductsList, 1500);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <ProductsContext.Provider value={{ productsListed, updateProductsListed }}>
+    <ProductsContext.Provider
+      value={{ productsListed, updateProductsListed, loading, cart }}
+    >
       {children}
     </ProductsContext.Provider>
   );

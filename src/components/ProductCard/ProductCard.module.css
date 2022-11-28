@@ -1,0 +1,23 @@
+.product_image_container {
+  margin: auto;
+  max-width: 20rem;
+}
+
+.product_image_container > img {
+  object-fit: contain;
+  width: 100%;
+  height:50%;
+}
+
+.product_details_container > .product_name_container {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_details_container > .product_price_ratings_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+  margin-top: 8px;
+}
