@@ -15,7 +15,6 @@ import {
 } from "utilities";
 const ProductsContext = createContext();
 
-
 const ProductsProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [productsListed, updateProductsListed] = useState([]);
@@ -26,23 +25,17 @@ const ProductsProvider = ({ children }) => {
   );
 
   const checkItemExistsInCartOrNot = (cartDetails, selectedItemDetails) =>
-    cartDetails.includes(
+    cartDetails.some(
       (everyCartItem) => everyCartItem.id === selectedItemDetails.id
     );
   const addNewItemToCart = (itemToBeAdded) => {
-    const signal = checkItemExistsInCartOrNot(cart, itemToBeAdded);
-    if (!signal) {
-      updateCart((prevCart) => [...prevCart, { ...itemToBeAdded }]);
-    }
+    updateCart((prevCart) => [...prevCart, { ...itemToBeAdded }]);
   };
   const removeExistingItemFromCart = (itemToBeRemoved) => {
-    const signal = checkItemExistsInCartOrNot(cart, itemToBeRemoved);
-    if (signal) {
-      const modifiedCart = cart.filter(
-        (everyCartItem) => everyCartItem.id !== itemToBeRemoved.id
-      );
-      updateCart(modifiedCart);
-    }
+    const modifiedCart = cart.filter(
+      (everyCartItem) => everyCartItem.id !== itemToBeRemoved.id
+    );
+    updateCart(modifiedCart);
   };
   const setNewProductsList = () => {
     updateProductsListed(data?.products);
@@ -57,7 +50,8 @@ const ProductsProvider = ({ children }) => {
     const timer = setTimeout(setNewProductsList, 1500);
     return () => clearTimeout(timer);
   }, []);
-
+  console.log(cart);
+  console.log(cart.find((everyCartItem) => everyCartItem.id === "kwl-01"));
   return (
     <ProductsContext.Provider
       value={{
@@ -70,6 +64,7 @@ const ProductsProvider = ({ children }) => {
         modifiedProductsList,
         addNewItemToCart,
         removeExistingItemFromCart,
+        checkItemExistsInCartOrNot,
       }}
     >
       {children}

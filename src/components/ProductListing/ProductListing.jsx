@@ -48,7 +48,7 @@ const ProductListing = () => {
             <h4>LOADING....</h4>
           ) : modifiedProductsList.length !== 0 ? (
             modifiedProductsList.map((everyProduct) => {
-              return <ProductCard key={everyProduct.id} {...everyProduct} />;
+              return <ProductCard key={everyProduct.id} everyProduct={everyProduct} />;
             })
           ) : (
             <div>NO PRODUCTS FOUND</div>

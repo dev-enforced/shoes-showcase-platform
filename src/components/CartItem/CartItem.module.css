@@ -1,0 +1,22 @@
+.cart_item_container {
+  justify-content: start;
+  gap: 1rem;
+  font-size: 1rem;
+  position: relative;
+}
+
+.cart_img_container {
+  width: 7rem;
+}
+.cart_img_container img {
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.remove_item_btn{
+    position: absolute;
+    top: -8px;
+    left: -8px;
+}

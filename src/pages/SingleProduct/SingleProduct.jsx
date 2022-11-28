@@ -15,7 +15,7 @@ const SingleProduct = () => {
       <div className={`container-flex-column ${styles.single_product_wrapper}`}>
         <div className={styles.single_product_content_wrapper}>
           {productToBeDisplayed ? (
-            <DetailledProductInfo {...productToBeDisplayed} />
+            <DetailledProductInfo productToBeDisplayed={productToBeDisplayed} />
           ) : (
             <div>
               <p>LOADING...</p>

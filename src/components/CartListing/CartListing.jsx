@@ -1,12 +1,10 @@
 import React from "react";
 import { useProducts } from "context";
-import { useNavigate } from "react-router-dom";
 import styles from "./CartListing.module.css";
 import { Cart, Navigate, Scheduler } from "constants";
 import { CartItem } from "components";
 
 const CartListing = () => {
-  const redirect = useNavigate();
   const { cart } = useProducts();
   return (
     <>
@@ -24,7 +22,12 @@ const CartListing = () => {
             </div>
           ) : (
             cart.map((everyCartItem) => {
-              return <CartItem key={everyCartItem?.id} {...everyCartItem} />;
+              return (
+                <CartItem
+                  key={everyCartItem?.id}
+                  everyCartItem={everyCartItem}
+                />
+              );
             })
           )}
         </div>

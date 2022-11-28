@@ -4,21 +4,23 @@ import { GoBack } from "constants";
 import { generateRatings } from "utilities";
 import styles from "./DetailledProductInfo.module.css";
 import { routeConstants, shoeEdgeEnds } from "constants";
+import { useProducts } from "context";
 
-const DetailledProductInfo = ({
-  id,
-  short_name,
-  long_name,
-  ratings,
-  product_picUrl,
-  price,
-  color,
-  product_type,
-}) => {
+const DetailledProductInfo = ({ productToBeDisplayed }) => {
+  const { short_name, long_name, ratings, product_picUrl, price } =
+    productToBeDisplayed;
   const starsToBeShown = generateRatings(ratings);
   const customisedRating = generateRatings(0);
   const redirect = useNavigate();
+
   const { STORE_ROUTE } = routeConstants;
+  const {
+    cart,
+    checkItemExistsInCartOrNot,
+    addNewItemToCart,
+    removeExistingItemFromCart,
+  } = useProducts();
+
   return (
     <>
       <div className={styles.detailled_product_info_container}>
@@ -120,7 +122,18 @@ const DetailledProductInfo = ({
         </div>
         <div className={styles.product_actions}>
           <button className={styles.share_design}>SHARE DESIGN</button>
-          <button className={styles.add_to_cart_btn}>ADD TO CART</button>
+          <button
+            onClick={() => {
+              checkItemExistsInCartOrNot(cart, productToBeDisplayed)
+                ? removeExistingItemFromCart(productToBeDisplayed)
+                : addNewItemToCart(productToBeDisplayed);
+            }}
+            className={styles.add_to_cart_btn}
+          >
+            {checkItemExistsInCartOrNot(cart, productToBeDisplayed)
+              ? "REMOVE FROM CART"
+              : "ADD TO CART"}
+          </button>
         </div>
       </div>
     </>
