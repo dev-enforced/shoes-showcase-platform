@@ -1,7 +1,7 @@
-import { Delete } from "constants";
-import { useProducts } from "context";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Delete } from "constants";
+import { useProducts } from "context";
 import styles from "./CartItem.module.css";
 
 const CartItem = ({ everyCartItem }) => {

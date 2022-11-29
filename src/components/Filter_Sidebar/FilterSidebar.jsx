@@ -1,8 +1,13 @@
 import React from "react";
-import { Filter, typeFilters, costFilters, colorFilters } from "constants";
-import styles from "./FilterSidebar.module.css";
-import { actionConstants } from "constants";
+import {
+  Filter,
+  typeFilters,
+  costFilters,
+  colorFilters,
+  actionConstants,
+} from "constants";
 import { useProducts } from "context";
+import styles from "./FilterSidebar.module.css";
 
 const FilterSidebar = () => {
   const {
@@ -14,7 +19,7 @@ const FilterSidebar = () => {
     <div className={`container-flex-column ${styles.filter_sidebar_container}`}>
       <div className={styles.sidebar_title_header}>
         <h3>Filters</h3>
-        <Filter size={25} />
+        <Filter className={`cursor-pointer`} size={25} />
       </div>
       <div className={styles.filter_contents}>
         <h4 className={styles.filter_title}>Cost</h4>

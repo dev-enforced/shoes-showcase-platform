@@ -1,12 +1,14 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import { navLinks, User } from "constants";
+import { NavLink, useNavigate } from "react-router-dom";
+import { navLinks, User, routeConstants } from "constants";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   const getActiveStyles = ({ isActive }) => {
-    return isActive ? `${styles.highlight}`:"";
+    return isActive ? `${styles.highlight}` : "";
   };
+  const redirect = useNavigate();
+  const { HOME_ROUTE } = routeConstants;
   return (
     <>
       <div className={`container-flex-align-center ${styles.nav_container}`}>
@@ -15,6 +17,9 @@ const Navbar = () => {
             src="/assets/websitelogo.png"
             alt="Kicksup logo"
             className={`cursor-pointer ${styles.website_logo}`}
+            onClick={() => {
+              redirect(HOME_ROUTE);
+            }}
           />
         </div>
         <div className={`container-flex-center ${styles.routes_container}`}>

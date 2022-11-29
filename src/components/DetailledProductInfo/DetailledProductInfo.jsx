@@ -1,10 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { GoBack } from "constants";
 import { generateRatings } from "utilities";
-import styles from "./DetailledProductInfo.module.css";
-import { routeConstants, shoeEdgeEnds } from "constants";
+import { routeConstants, shoeEdgeEnds, GoBack } from "constants";
 import { useProducts } from "context";
+import styles from "./DetailledProductInfo.module.css";
 
 const DetailledProductInfo = ({ productToBeDisplayed }) => {
   const { short_name, long_name, ratings, product_picUrl, price } =
@@ -121,7 +120,7 @@ const DetailledProductInfo = ({ productToBeDisplayed }) => {
           </div>
         </div>
         <div className={styles.product_actions}>
-          <button className={styles.share_design}>SHARE DESIGN</button>
+          <button className={`cursor-pointer ${styles.share_design}`}>SHARE DESIGN</button>
           <button
             onClick={() => {
               checkItemExistsInCartOrNot(cart, productToBeDisplayed)

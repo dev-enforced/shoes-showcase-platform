@@ -24,6 +24,11 @@ const ProductsProvider = ({ children }) => {
     initialFilterState
   );
 
+  // 1) Attach cursor:pointer to all icons
+  // 2) On Home page i.e. on "/"" route then try adding content to it
+  // 3) On the navbar logo when we click  then you should try it to go to home page
+  // 4) On the navbar take care of opacity
+  // 5) Take the care of cart ka box shadow
   const checkItemExistsInCartOrNot = (cartDetails, selectedItemDetails) =>
     cartDetails.some(
       (everyCartItem) => everyCartItem.id === selectedItemDetails.id
